@@ -19,4 +19,4 @@ print'
 '
 ?>
 
-<!-- Ime dokumenta: vjezba-1 -->
+<!-- vjezba-1 -->
