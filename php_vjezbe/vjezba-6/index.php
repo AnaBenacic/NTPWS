@@ -7,6 +7,7 @@
     <meta name="keywords" content="kalkulator, switch naredba">
     <meta name="author" content="Ana Benačić">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 </head>
 <body>
   <p><b>Kalkulator</b></p>
