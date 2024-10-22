@@ -43,4 +43,4 @@
 </html>
 
 
-<!-- NOT DONE -->
+<!-- vjezba-7 -->
