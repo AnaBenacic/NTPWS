@@ -3,8 +3,8 @@
   <head>
     <title>Izračun</title>
     <meta http-equiv="content-type" content="text-html; charset=UTF-8">
-    <meta name="description" content="O Da Vincijevom kodu">
-    <meta name="keywords" content="Da Vincijev kod, roman, triler, Dan Brown">
+    <meta name="description" content="izračun">
+    <meta name="keywords" content="izračun, vrijednosti, formula">
     <meta name="author" content="Ana Benačić">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
