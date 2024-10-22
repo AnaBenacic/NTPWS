@@ -9,6 +9,7 @@ print'
     <meta name="keywords" content="Da Vincijev kod, roman, triler, Dan Brown">
     <meta name="author" content="Ana Benačić">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
   </head>
   <body>
     <h1>Da Vincijev kod</h1>
