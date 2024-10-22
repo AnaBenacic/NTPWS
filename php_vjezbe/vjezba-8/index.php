@@ -7,6 +7,7 @@
     <meta name="keywords" content="vozila, Audi, BMW, Renault, Citroen">
     <meta name="author" content="Ana Benačić">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
   </head>
   <body>
     <form action="" method="post">
