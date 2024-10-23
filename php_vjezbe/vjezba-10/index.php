@@ -34,9 +34,3 @@ print '
 
 
 <!-- vjezba-10 -->
-
-<!-- 
-
-https://www.php.net/manual/en/function.str-word-count.php
-
- -->
