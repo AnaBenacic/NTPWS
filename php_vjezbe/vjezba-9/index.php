@@ -24,24 +24,25 @@
 #    $currentWeekday = 'Sunday';
     $currentWeekday = strval(date('l'));
 #    za provjeru koliko je sati:
-#    $currentTime = 21; 
+#    $currentTime = 18; 
     $currentTime = strval(date('G')); 
+    $currentDate = date('m.d.');
     $openTime = 8;
     $closeTime = 20;
     $openTimeSaturday = 9;
     $closeTimeSaturday = 14;
   
-    $holidays = array ("Nova godina" => '01.01.',
-                      "Sveta tri kralja" => '06.01.',
-                      "Praznik rada" => '01.05.',
-                      "Dan državnosti" => '30.05.',
-                      "Dan antifašističke borbe" => '22.06.',
-                      "Dan pobjede i domovinske zahvalnosti" => '05.08.',
-                      "Velika gospa" => '15.08.',
-                      "Dan svih svetih" => '01.11.',
-                      "Dan sjećanja na žrtve Domovinskog rata" => '18.11.',
-                      "Božić" => '25.12.',
-                      "Sveti Stjepan" => '26.12.'
+    $holidays = array ('01.01.', #"Nova godina"
+                      '06.01.', #"Sveta tri kralja"
+                      '01.05.', #"Praznik rada"
+                      '30.05.', #"Dan državnosti"
+                      '22.06.', #"Dan antifašističke borbe"
+                      '05.08.', #"Dan pobjede i domovinske zahvalnosti"
+                      '15.08.', #"Velika gospa"
+                      '01.11.', #"Dan svih svetih"
+                      '18.11.', #"Dan sjećanja na žrtve Domovinskog rata"
+                      '25.12.', #"Božić"
+                      '26.12.' #"Sveti Stjepan"
                     );
         
     function check_time($currentTime, $openTime, $closeTime) { 
@@ -77,41 +78,8 @@
     }
 
     function check_holidays($currentDay, $currentMonth, $holidays) {
-      if (($currentDay . "." . $currentMonth . ".") == $holidays["Nova godina"]) {
+      if (in_array($currentDate, $holidays)) {
         return 0;
-      }
-      else if (($currentDay . "." . $currentMonth . ".") == $holidays["Sveta tri kralja"]) {
-        return 0;
-      }
-      else if (($currentDay . "." . $currentMonth . ".") == $holidays["Praznik rada"]) {
-        return 0;
-      }
-      else if (($currentDay . "." . $currentMonth . ".") == $holidays["Dan državnosti"]) {
-        return 0;
-      }
-      else if (($currentDay . "." . $currentMonth . ".") == $holidays["Dan antifašističke borbe"]) {
-        return 0;
-      }
-      else if (($currentDay . "." . $currentMonth . ".") == $holidays["Dan pobjede i domovinske zahvalnosti"]) {
-        return 0;
-      }
-      else if (($currentDay . "." . $currentMonth . ".") == $holidays["Velika gospa"]) {
-        return 0;
-      }
-      else if (($currentDay . "." . $currentMonth . ".") == $holidays["Dan svih svetih"]) {
-        return 0;
-      }
-      else if (($currentDay . "." . $currentMonth . ".") == $holidays["Dan sjećanja na žrtve Domovinskog rata"]) {
-        return 0;
-      }
-      else if (($currentDay . "." . $currentMonth . ".") == $holidays["Božić"]) {
-        return 0;
-      }
-      else if (($currentDay . "." . $currentMonth . ".") == $holidays["Sveti Stjepan"]) {
-        return 0;
-      }
-      else {
-        return 1;
       }
     }
 
@@ -130,8 +98,8 @@
                                     && check_holidays($currentDay, $currentMonth, $holidays)) ? "open" : "closed") . ".</p><br>";
 
     echo '<p><h2>Holidays in Croatia:</h2></p>';
-    foreach ($holidays as $holidayName => $holidayDate) {
-        print "<p>$holidayName $holidayDate</p>";
+    foreach ($holidays as $holidayDate) {
+        print "<p>$holidayDate</p>";
     }
         
 ?>
