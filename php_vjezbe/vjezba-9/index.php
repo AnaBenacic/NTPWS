@@ -13,19 +13,19 @@
 <?php
 
     date_default_timezone_set("Europe/Zagreb");
-    $currentYear = strval(date('o'));
+    $currentYear = date('o');
 #    za provjeru blagdana:
 #    $currentMonth = '12'; 
-    $currentMonth = strval(date('m'));
+    $currentMonth = date('m');
 #    za provjeru blagdana:
 #    $currentDay = '25';
-    $currentDay = strval(date('d'));
+    $currentDay = date('d');
 #    za provjeru dana u tjednu:
 #    $currentWeekday = 'Sunday';
-    $currentWeekday = strval(date('l'));
+    $currentWeekday = date('l');
 #    za provjeru koliko je sati:
 #    $currentTime = 18; 
-    $currentTime = strval(date('G')); 
+    $currentTime = date('G'); 
     $currentDate = date('m.d.');
     $openTime = 8;
     $closeTime = 20;
