@@ -16,13 +16,9 @@ print'
 
 				<label for="country">Country</label>
 				<select id="country" name="country">
-				  <option value="">Please select</option>
-				  <option value="HR">Croatia</option>
-				  <option value="FR">France</option>
-				  <option value="DE">Germany</option>
-				  <option value="IT">Italy</option>
-				  <option value="ES">Spain</option>
-				  <option value="EN">United Kingdom</option>
+				<option value="">Please choose from the dropdown menu</option>';
+				include 'countries.php';
+print '
 				</select>
 
 				<label for="subject">Subject</label>
