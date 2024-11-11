@@ -98,7 +98,7 @@ print'
     
 	print'
 	<footer>
-		<p>Copyright &copy; 2024. Ana Benačić <a href="https://github.com/AnaBenacic/NTPWS" target="_blank"><img src="img/GitHub.png" title="Github" alt="Github"></a></p>
+		<p>Copyright &copy; ' . date("Y") . ' Ana Benačić <a href="https://github.com/AnaBenacic/NTPWS" target="_blank"><img src="img/GitHub.png" title="Github" alt="Github"></a></p>
 	</footer>
 </body>
 </html>';
