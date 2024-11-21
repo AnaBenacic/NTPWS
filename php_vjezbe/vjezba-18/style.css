@@ -1,0 +1,33 @@
+label {
+	display: block;
+	margin-top: 15px;
+    font-size: 22px;
+}
+
+input[type=text], input[type=email], input[type=password], select, textarea {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #1f6374;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 5px;
+	font-family: 'Helvetica', sans-serif;
+	font-size: 18px;
+	border-radius: 5px;
+}
+
+input[type=submit] {
+	width: 50%;
+    display: block;
+	background-color: #54c2dd;
+    color: white;
+	font-size: 20px;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+	border-radius: 5px;
+}
+
+input[type=submit]:hover {
+    background-color: #32a1bd;
+}
