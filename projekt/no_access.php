@@ -52,7 +52,7 @@
         <h1>Access Denied</h1>
         <p>You do not have permission to access this website.</p>
         <form method="post">
-            <button type="submit" name="redirect">Go Back to Home</button>
+            <button type="submit" name="redirect">Go back to home</button>
         </form>
     </div>
 
